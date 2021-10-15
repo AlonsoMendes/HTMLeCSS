@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Background Images</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style type="text/css">
+        dl {
+            margin: 10px 0 20px;
+            padding: 10px;
+            background: #353535;
+            color: #eee;
+            border: dashed 2px black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        dl dt {
+            margin: 0 0 5px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        dl code {
+            background: inherit;
+            padding: 0
+        }
+    </style>
+
+</head>
+    <body>
+
+        <h1>Background Images, Folks</h1>
+
+        <h2>Propriedades</h2>
+        <p>Existem algumas propriedades de fundo diferentes:
+        </p>
+
+        <dl>
+            <dt>background-image</dt>
+            <dd>
+                <p> Esta propriedade é a localização da própria imagem:</p>
+                <code> h1 { background-image: url('http://website.com/img/background.jpg'); }</code>
+                <br>
+                <p>ou</p><br>
+
+                <code>h1 { background-image: url('images/background.jpg')}</code>
+
+            </dd>
+        </dl>
+
+        <dl>
+            <dt>background-color</dt>
+            <p>Isso nos permite adicionar cor a um plano de fundo. Um exemplo em CSS seria assim:</p>
+            <dd>
+                <code> h1 { background-color: green; }</code>
+            </dd>
+        </dl>
+
+
+        <dl>
+            <dt>background-repeat</dt>
+            <dd>
+                <p>É assim que a imagem será apresentada, o valor pode ser qualquer um dos seguintes:</p> <br>
+
+                <code> background-repeat: repeat;</code>
+                <p>Isso se repete nos eixos X e Y, essencialmente, exibirá a imagem em todo o plano de fundo.</p><br>
+
+                <code> background-repeat: repeat-x;</code>
+                <p>Isso repete o plano de fundo no eixo x ou horizontalmente.</p><br>
+                
+                <code> background-repeat: repeat-y;</code>
+                <p>Isso repete o plano de fundo no eixo y ou verticalmente.</p><br>
+
+                <code> background-repeat: no-repeat;</code>
+                <p>Isso mostra a imagem apenas uma vez, sem repetir.</p>
+            
+            </dd>
+        </dl>
+
+
+        <dl>
+            <dt>background-position</dt>
+            <dd>
+            <p>Esta é a posição real da imagem de fundo dentro de seu container. Os valores podem ser:</p>
+                <code>background-position: top</code>
+                <code>background-position: right</code>
+                <code>background-position: bottom</code>
+                <code>background-position: left</code>
+                <code>background-position: center</code> <br>
+
+                <p>Também pode ser uma porcentagem, comprimento ou combinação:</p>
+                <code>background-position: bottom left;</code>
+
+            </dd>
+        </dl>
+
+        <h2>Abreviação</h2>
+        <p>Há uma maneira rápida de contornar as imagens de fundo, você não necessariamente tem que digitar todo o codigo acima para configurar seu background da maneira que deseja.</p>
+
+        <dl>
+            <dt> Background</dt>
+            <dd>
+                A abreviatura de plano de fundo pode lidar com tudo de uma vez!
+                <code>background: green url('images/background.jpg') top left no-repeat;</code>
+            </dd>
+        </dl>
+
+
+        <!-- END Documentation-->
+
+        <h2>Exemplos</h2>
+        
+        <div id="background-1" class="background-example">
+            Background Image, repeated
+        </div>
+
+        <div id="background-2" class="background-example">
+            Background Colour
+        </div>
+
+        <div id="background-3" class="background-example">
+            Background Image, positioned, no repeating
+        </div>
+
+        <div id="background-4" class="background-example">
+            Background Image, positioned, repeating on x axis 
+        </div>
+
+    </body>
+</html>

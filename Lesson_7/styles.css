@@ -1,0 +1,145 @@
+/* Lesson 7 CSS 
+    Alonso Mendes
+    Outubro 2021
+*/
+
+/* Simples CSS Reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+body{
+    padding:  40px;
+    font-family: Georgia, Times, serif;
+    color: #353535;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-weight: bolder;
+}
+
+ h1{
+     font-size: 3em; /*3x o tamanho da fonte de base ( que é 16px no nosso caso)*/
+ }
+
+h2{
+    font-size: 2em;/*2x o tamanho da fonte de base ( que é 16px no nosso caso)*/
+}
+
+h3 {
+    font-size: 1.5em; /*1.5x o tamanho da fonte de base ( que é 16px no nosso caso)*/
+    letter-spacing: -1px; /*Pode ser normal ou um valor*/
+    word-spacing: 10px; /*Pode ser normal ou um valor*/
+    text-align: center; 
+}
+
+blockquote {
+    margin:  0 0 0 30px;
+    font-style: italic;
+    text-indent: 80px;
+
+    line-height: 1.3;
+}
+
+span {
+    text-decoration: line-through;
+}
+
+em {
+    text-transform: capitalize;
+}
+
+strong {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a {
+    color: #3ca;
+    text-decoration: none;
+}
+
+code {
+    display: block;
+    color: #71c702;
+    background: rgb(194, 225, 241);
+    padding: 5px;
+}
+
+/* Borders*/
+
+.border-box {
+    background: #eee;
+    margin:  0 0 20px;
+    padding: 20px;
+    width: 300px;
+}
+
+
+#box-1 {
+    border:  solid 1px black;
+}
+
+#box-2 {
+    border: dashed 1px black;
+}
+
+#box-3 {
+    border: dotted 1px black;
+}
+
+#box-4 {
+    border: double 3px black;
+}
+
+#box-5 {
+    border: solid 4px black;
+}
+
+#box-6 {
+    border: dashed 4px black;
+}
+
+#box-7 {
+    border: dotted 4px black;
+}
+
+#box-8 {
+    border: double 6px black;
+}
+
+/* Background images */
+
+.background-example {
+    height: 200px;
+    width: 200px;
+    border: solid 1px black;
+}
+
+#background-1 {
+    background-image: url('images/blue_background.jpg');
+}
+
+#background-2 {
+    background-color: rgb(255, 0, 0)
+}
+
+#background-3 {
+    background-image: url('images/steak_background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#background-4 {
+    color: #eee;
+    background: url('images/skull_background.jpg') bottom left repeat-x;
+}
+
+
